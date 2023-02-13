@@ -1,11 +1,4 @@
-# Paysis
-
-### About project
-I was inspired to create an open-source **REST API** server example by the idea that newcomers in IT industry would use it get hands-on experience with this technology (creating collections in tools like Postman and setting up test automation frameworks).
-
-It's an example of payment system - you can log in as an admin and create users and transactions for these users. Also you can make some minor changes in server configuration. For more information about routes, it'd better to open **Postman** collection (which is included in current repo).
-
-No database needed.
+## Payment Api
 
 ### Project setup
 1. Rename `.env.example` file into `.env`. Edit data in this file if you want to (admin credentials, server port and et cetera).
@@ -82,3 +75,12 @@ PATCH /config
 DELETE /config
 no query parameters or body data needed in request
 ```
+
+
+
+![Screenshot (121)](https://user-images.githubusercontent.com/33089347/218465146-707806c7-66fb-49e4-a93e-3a02a4a22be2.png)
+
+## API Groupings
+
+<img width="223" alt="API Structure" src="https://user-images.githubusercontent.com/33089347/218465156-955b9559-e7a1-45f9-b78a-0e5913c05da0.PNG">
+
