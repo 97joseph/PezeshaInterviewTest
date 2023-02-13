@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <script src="script.js" defer></script>
+
+    <title>Loan Calculator</title>
+  </head>
+  <body id="vantajs" class="vantajs">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 mx-auto">
+          <div
+            class="card card-body text-center rounded"
+            style="background-color: #10151c; border-color: #3ff"
+          >
+            <h1 class="pb-3" style="color: #3ff">Loan Calculator</h1>
+            <form id="loan-form">
+              <div class="form-group">
+                <div class="input-group mb-2">
+                  <span
+                    class="input-group-text"
+                    style="background-color: #00001e; color: #3ff"
+                    >$</span
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="amount"
+                    placeholder="Loan Amount"
+                    style="background-color: #3ff; color: #00001e"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-2">
+                  <span
+                    class="input-group-text"
+                    style="background-color: #00001e; color: #3ff"
+                    >%</span
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="interest"
+                    placeholder="Interest"
+                    style="background-color: #3ff; color: #00001e"
+                  />
+                </div>
+              </div>
+              <div class="form-group mb-2">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="years"
+                  placeholder="Years To Repay"
+                  style="background-color: #3ff; color: #00001e"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  value="Calculate"
+                  class="btn btn-secondary btn-block mt-3"
+                  style="background-color: #3ff; color: #00001e"
+                />
+              </div>
+            </form>
+            <!-- LOADER -->
+
+            <div id="loading" class="loading">
+              <img src="loading.gif" alt="" class="mt-2" />
+            </div>
+
+            <!-- RESULTS -->
+            <div id="results" class="pt-4 results">
+              <h4 class="pb-1" style="color: #3ff">Results</h4>
+              <div class="form-group">
+                <div class="input-group mb-2">
+                  <span
+                    class="input-group-text"
+                    style="background-color: #00001e; color: #3ff"
+                    >Monthly Payment</span
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="monthly-payment"
+                    style="background-color: #3ff; color: #00001e"
+                    disabled
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group mb-2">
+                  <span
+                    class="input-group-text"
+                    style="background-color: #00001e; color: #3ff"
+                    >Payments in Total</span
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-payment"
+                    style="background-color: #3ff; color: #00001e"
+                    disabled
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <span
+                    class="input-group-text"
+                    style="background-color: #00001e; color: #3ff"
+                    >Total Interest Sum</span
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-interest"
+                    style="background-color: #3ff; color: #00001e"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

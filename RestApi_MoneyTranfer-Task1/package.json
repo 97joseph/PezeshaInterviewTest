@@ -1,0 +1,21 @@
+{
+  "name": "paysis",
+  "version": "1.0.0",
+  "description": "Payment system API example",
+  "engines": {
+    "node": "14.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Dmitrii Bormotov",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
+  }
+}
